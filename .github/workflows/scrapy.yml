@@ -21,5 +21,8 @@ jobs:
       - name: Install dependencies
         run: npm install playwright
 
+      - name: Install Playwright browsers
+        run: npx playwright install
+
       - name: Run scraper with email 22f2000788@ds.study.iitm.ac.in
         run: node scrape.js
